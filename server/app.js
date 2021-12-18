@@ -28,7 +28,7 @@ app.use(
   })
 )
 
-// logger
+// logger 官方的logger能打印的东西比较少，我们使用log4js
 app.use(async (ctx, next) => {
   const start = new Date()
   await next()
