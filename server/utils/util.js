@@ -19,11 +19,8 @@ module.exports = {
    * @param {number} pageSize
    */
   pager({ pageNum = 1, pageSize = 10 }) {
-    // 通过*1转化成number类型
     pageNum *= 1
     pageSize *= 1
-
-    // 查询索引，第1页从第0个开始查，第2页从第10个开始查......
     const skipIndex = (pageNum - 1) * pageSize
     return {
       page: {

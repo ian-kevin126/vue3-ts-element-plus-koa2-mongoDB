@@ -8,6 +8,11 @@ export default defineConfig({
   server: {
     host: 'localhost',
     port: 5001,
+    proxy: {
+      '/api': {
+        target: 'http://localhost:5002',
+      },
+    },
   },
   resolve: {
     alias: {

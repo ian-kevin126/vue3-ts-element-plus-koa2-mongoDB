@@ -6,12 +6,15 @@ const onerror = require('koa-onerror')
 const bodyparser = require('koa-bodyparser')
 const logger = require('koa-logger')
 const log4js = require('./utils/log4j')
+const router = require('koa-router')()
 
-const index = require('./routes/index')
 const users = require('./routes/users')
 
 // error handler
 onerror(app)
+
+// 连接数据库
+require('./config/db')
 
 // middlewares
 app.use(
@@ -50,9 +53,11 @@ app.use(async (ctx, next) => {
   })
 })
 
-// routes
-app.use(index.routes(), index.allowedMethods())
-app.use(users.routes(), users.allowedMethods())
+router.prefix('/api')
+
+router.use(users.routes(), users.allowedMethods())
+
+app.use(router.routes(), router.allowedMethods())
 
 // error-handling
 app.on('error', (err, ctx) => {
