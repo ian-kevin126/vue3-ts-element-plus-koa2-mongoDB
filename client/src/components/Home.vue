@@ -37,7 +37,7 @@ export default {}
       background-color: white;
       color: #001529;
       overflow-y: auto;
-      box-shadow: 5px 0 10px -6px #f3f3f3;
+      box-shadow: 5px 5px 10px -6px #f3f3f3;
       transition: width 0.5s;
     }
     .content-right {

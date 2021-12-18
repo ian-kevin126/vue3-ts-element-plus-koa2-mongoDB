@@ -49,16 +49,24 @@ function request(options) {
     options.params = options.data
   }
 
+  let isMock = config.mock
+
+  // 在局部对每个接口做单独的mock配置，覆盖全局的（config.js中的mock）
+  if (typeof options.mock != undefined) {
+    isMock = options.mock
+  }
+
   if (config.env === 'prod') {
     // 生产环境下使用baseApi
     service.defaults.baseURL = config.baseApi
   } else {
-    service.defaults.baseURL = config.mock ? config.mockApi : config.baseApi
+    service.defaults.baseURL = isMock ? config.mockApi : config.baseApi
   }
 
   return service(options)
 }
 
+// 支持 this.$request.get('/getUserInfo', {name: 'kevin'}).then() 这种方式去调用接口
 ;['get', 'post', 'put', 'delete', 'patch'].forEach((item) => {
   request[item] = (url, data, options) => {
     return request({
