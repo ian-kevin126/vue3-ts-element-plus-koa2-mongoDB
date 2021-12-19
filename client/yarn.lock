@@ -7,7 +7,7 @@
   resolved "https://registry.npmmirror.com/@babel/parser/download/@babel/parser-7.16.6.tgz#8f194828193e8fa79166f34a4b4e52f3e769a314"
   integrity sha512-Gr86ujcNuPDnNOY8mi383Hvi8IYrJVJYuf3XcuBM/Dgd+bINn/7tHqsj+tKkoreMbmGsFLsltI/JJd8fOFWGDQ==
 
-"@element-plus/icons-vue@^0.2.2":
+"@element-plus/icons-vue@^0.2.2", "@element-plus/icons-vue@^0.2.4":
   version "0.2.4"
   resolved "https://registry.npmmirror.com/@element-plus/icons-vue/download/@element-plus/icons-vue-0.2.4.tgz#dadcf72f0cea53dc83b7b7db80e1418716d7b02c"
   integrity sha512-RsJNyL58rwxtsjeMy34o8txkL6UlME1stWsUlRpTac6UE9Bx9gdJvnDXbIKhOJqBLX17fBjmposdrn6VTqim2w==
@@ -118,17 +118,17 @@
   integrity sha512-vPV6Cq+NIWbH5pZu+V+2QHE9y1qfuTq49uNWw4f7FDEeZaDU2H2cx5jcUZOAKW7qTrUS4k6qZPbMy1x4N96nbA==
 
 "@vueuse/core@^7.0.0":
-  version "7.3.0"
-  resolved "https://registry.npmmirror.com/@vueuse/core/download/@vueuse/core-7.3.0.tgz#fe24ff698069cb7dcc835a8fe2eeb29b22b2a702"
-  integrity sha512-gPJyMMAquva9Qwqz63qGQT122m5hWI8Kuy8kfPV/JLQU7m01CXooyv8FIrX9TV8OxVcHBTPXPJHY0oyUiFoNgw==
+  version "7.4.0"
+  resolved "https://registry.npmmirror.com/@vueuse/core/download/@vueuse/core-7.4.0.tgz#dca848b9b2209d94142f2ec0baad4ee00455262c"
+  integrity sha512-CgYouxjXOE63gMn3l9cOsgzPTEAk3yoncsSmJUxXAi/to25rCPVWB/39jXTPhWZboR43EDDMWoEhHaSoMzaldg==
   dependencies:
-    "@vueuse/shared" "7.3.0"
+    "@vueuse/shared" "7.4.0"
     vue-demi "*"
 
-"@vueuse/shared@7.3.0":
-  version "7.3.0"
-  resolved "https://registry.npmmirror.com/@vueuse/shared/download/@vueuse/shared-7.3.0.tgz#729b2f0a83f38647896d955902e828dcbd8ed7dc"
-  integrity sha512-vOAeI84tIXKVkzm8s/Mxbrzhj0QN6NyVc/sC6LrW0AjVNdvpD8sB1dZiDn9yh8T77WJmloCEt4zZVIppeq7I+w==
+"@vueuse/shared@7.4.0":
+  version "7.4.0"
+  resolved "https://registry.npmmirror.com/@vueuse/shared/download/@vueuse/shared-7.4.0.tgz#8f0767c4f7b89112c1b34accec44a6c8625ce085"
+  integrity sha512-x5Jn6jUB8gS1mGnVCoNWFEpAoDkm2QwtacZTUgKMn0Ow8tlUBKIfGVOt4vn9qZB10froED/ARHEj79WKLXRieA==
   dependencies:
     vue-demi "*"
 
@@ -390,7 +390,7 @@ is-number@^7.0.0:
 
 lodash@^4.17.21:
   version "4.17.21"
-  resolved "https://registry.nlark.com/lodash/download/lodash-4.17.21.tgz?cache=0&sync_timestamp=1622604487115&other_urls=https%3A%2F%2Fregistry.nlark.com%2Flodash%2Fdownload%2Flodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  resolved "https://registry.npmmirror.com/lodash/download/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha1-Z5WRxWTDv/quhFTPCz3zcMPWkRw=
 
 magic-string@^0.25.7:

@@ -1,7 +1,15 @@
 <template lang="">
-  <div>1111</div>
+  <div class="welcome">欢迎</div>
 </template>
 <script>
 export default {}
 </script>
-<style lang=""></style>
+<style lang="scss">
+.welcome {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+</style>
